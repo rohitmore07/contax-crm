@@ -5,10 +5,8 @@ const bodyParser = require('body-parser');
 const connectDB = require('./config/db');
 const contactRoutes = require('./routes/contactRoutes');
 
-// Load environment variables
 dotenv.config();
 
-// Connect to MongoDB
 connectDB();
 
 const app = express();
